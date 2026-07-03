@@ -6,20 +6,11 @@
 
 .cabecalho {
     padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #c78420; /* Agora a cor do topo funciona */
 }
 
-main {
-    flex: 1;
-}
-
-/* Define o tamanho padrão do container do cartão */
 .cartao {
     width: 260px;
-    height: 300px; /* Aumentei um pouco a altura para caber a imagem e o texto juntos */
+    height: 200px;
 }
 
 /* Força as duas imagens com a classe .cartao-imagem a ficarem idênticas */
