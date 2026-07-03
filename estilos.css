@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ajuda a controlar melhor as larguras */
+    box-sizing: border-box; /* Garante que margens e paddings não quebrem o tamanho das caixas */
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Corrigido: Agora as escritas mudam de fonte! */
+    font-family: 'Arial', sans-serif; /* Aplica a fonte em todo o site */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,25 +16,23 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c78420; /* Agora funciona porque o nome bate com o HTML */
+    background-color: #c78420; /* Agora a cor do topo funciona */
 }
 
 main {
     flex: 1;
 }
 
-/* Ajustando o tamanho do cartão e garantindo que o conteúdo respeite esse tamanho */
+/* Define o tamanho padrão do container do cartão */
 .cartao {
     width: 260px;
-    height: 200px;
+    height: 300px; /* Aumentei um pouco a altura para caber a imagem e o texto juntos */
 }
 
-.cartao-interno, .cartao-frente, .cartao-verso {
-    width: 100%;
-    height: 100%;
-}
-
+/* Força as duas imagens com a classe .cartao-imagem a ficarem idênticas */
 .cartao-imagem {
-    width: 100%; /* Agora ela vai ocupar 100% dos 260px do cartão */
-    height: auto;
+    width: 100%;        /* Ocupa toda a largura do cartão (260px) */
+    height: 180px;      /* Define uma altura fixa igual para as duas */
+    object-fit: cover;  /* Faz a imagem cortar elegantemente caso não seja do tamanho exato, sem esticar */
+    border-radius: 8px; /* Deixa as bordas arredondadas (opcional) */
 }
