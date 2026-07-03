@@ -1,6 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ajuda a controlar melhor as larguras */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Corrigido: Agora as escritas mudam de fonte! */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .cabecalho {
@@ -8,24 +16,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c78420;
+    background-color: #c78420; /* Agora funciona porque o nome bate com o HTML */
 }
 
+main {
+    flex: 1;
+}
+
+/* Ajustando o tamanho do cartão e garantindo que o conteúdo respeite esse tamanho */
 .cartao {
     width: 260px;
     height: 200px;
 }
 
-.cartao-imagem {
+.cartao-interno, .cartao-frente, .cartao-verso {
     width: 100%;
+    height: 100%;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main{
-    flex: 1;
+.cartao-imagem {
+    width: 100%; /* Agora ela vai ocupar 100% dos 260px do cartão */
+    height: auto;
 }
