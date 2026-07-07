@@ -5,6 +5,9 @@
 
 .cabecalho {
     padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cartao {
@@ -12,10 +15,10 @@
     height: 200px;
 }
 
-/* Força as duas imagens com a classe .cartao-imagem a ficarem idênticas */
+
 .cartao-imagem {
-    width: 100%;        /* Ocupa toda a largura do cartão (260px) */
-    height: 180px;      /* Define uma altura fixa igual para as duas */
-    object-fit: cover;  /* Faz a imagem cortar elegantemente caso não seja do tamanho exato, sem esticar */
-    border-radius: 8px; /* Deixa as bordas arredondadas (opcional) */
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
 }
