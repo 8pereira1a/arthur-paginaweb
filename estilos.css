@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7e3e1c;
+    background-color: #ff0101;
 }
     
 
@@ -45,7 +45,7 @@ h1 {
 }
 
 footer {
-    background-color: #7e3e1c;
+    background-color: #ff0101;
     padding: 15px 25px;
     color: #fff;
 }
